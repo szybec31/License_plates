@@ -12,8 +12,8 @@ Aplikacja składa się z backendu udostępniającego API oraz frontendu umożliw
 ## 1. Pobranie projektu
 
 ```bash
-git clone <URL_REPOZYTORIUM>
-cd license-plate-recognition
+git clone https://github.com/szybec31/License_plates.git
+cd License_plates
 ```
 
 ## 2. Backend — FastAPI
