@@ -1,0 +1,15 @@
+
+# API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Image processing
+numpy
+Pillow
+opencv-python
+
+# Testing and code quality
+pytest
+httpx
+ruff
