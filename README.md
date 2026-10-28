@@ -49,3 +49,14 @@ Frontend: http://localhost:5173
 - Backend i frontend uruchamiaj w osobnych terminalach.
 - Do zatrzymania serwera użyj `Ctrl + C`.
 - Środowisko `.venv` jest lokalne i nie znajduje się w repozytorium.
+
+
+## Część właściwa - sieci neuronowe i eksperymenty:
+
+1. Umieszczenie wszystkich zdjęć w jednym folderze `dataset` nie widoczny na repozytorium. Niektóre numery tablic się powtarzają (są przybliżone, innym tle, przednia i tylna, inny kąt). Numer tablicy jest w nazwie pliku obrazu. Operacja przeniesienia zdjęć spowodowała dodanie końcówek np. _1 do nazw plików.
+2. Sprawdzenie czy przypadkiem w zbiorze danych nie znajduje się dokładnie to samo zdjęcie. W celu sprawdzenia tego każde zdjęcie ma utworzony hash, który jest z każdym porównywany (nie znaleziono takich przypadków). Wykonuje to plik `check_duplicates.py`
+3. Utworzono funkcję tworzącą wstępną tabelę danych, która zawiera następujące kolumny `read_data.py`:
+- image - odczytane zdjęcie przechowywane jako tablica
+- filename - pełna nazwa pliku z rozszerzeniem
+- has_suffix - pole wykrywające obrazy o tym samym numerze tablicy (0 - brak).
+- label - numer tablicy rejestracyjnej odczytanej z nazwy pliku.

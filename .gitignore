@@ -55,6 +55,7 @@ mlruns/
 
 # Dataset files (may be large or sensitive)
 data/
+dataset/
 datasets/
 
 # =========================
